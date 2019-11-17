@@ -4,6 +4,7 @@ library(shiny)
  
 shinyUI(fluidPage(
  
+ includeCSS("style.css"),
   # Название приложения
   headerPanel("Calculator"),
  
