@@ -30,6 +30,7 @@ numericInput("FV", # Name
 "ФВ:", # Label
 40),
 
+
 h2("Биохимические показатели"),
 numericInput("OX", # Name
 "Общий холестерин:", # Label
@@ -69,7 +70,7 @@ numericInput("HSS", # Name
 selectInput("XSNFK", # Name
 "Выберите категорию ХСН ФК:", # Label
 choices = c("0", "1", "2", "3", "4")),
-selectInput("XSN stade", # Name
+selectInput("XSNstade", # Name
 "Выберите стадию ХСН:", # Label
 choices = c("0", "1", "2", "3")),
 
@@ -91,6 +92,16 @@ selectInput("FAT", # Name
 choices = c("0", "1")),
 
 submitButton("Load Preview Data") # Update data
+
+,uiOutput("retsediva_FP_EIT")
+,uiOutput("PPovtGosp")
+,uiOutput("PCardEmb")
+,uiOutput("PXCH")
+,uiOutput("PmtRezFp")
+,uiOutput("PmtPovtGosp")
+,uiOutput("PmtCardEmb")
+,uiOutput("PmtXCH")
+
 )
 
  
