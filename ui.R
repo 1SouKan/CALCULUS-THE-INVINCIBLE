@@ -58,19 +58,18 @@ shinyUI(fluidPage(
       selectInput("FAT",     "Абдоминальное ожирение:", choices = c("0", "1")),
     ),
 
-submitButton("Load Preview Data") # Update data
+    submitButton("Load Preview Data"), # Update data
 
-,uiOutput("retsediva_FP_EIT")
-,uiOutput("PPovtGosp")
-,uiOutput("PCardEmb")
-,uiOutput("PXCH")
-,uiOutput("PmtRezFp")
-,uiOutput("PmtPovtGosp")
-,uiOutput("PmtCardEmb")
-,uiOutput("PmtXCH")
-
-)
-
- 
+    tags$div(class = "risks", id = "risksOut", 
+      uiOutput("retsediva_FP_EIT"),
+      uiOutput("PPovtGosp"       ),
+      uiOutput("PCardEmb"        ),
+      uiOutput("PXCH"            ),
+      uiOutput("PmtRezFp"        ),
+      uiOutput("PmtPovtGosp"     ),
+      uiOutput("PmtCardEmb"      ),
+      uiOutput("PmtXCH"          )
+    )
+  )
 ))
 
