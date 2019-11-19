@@ -45,8 +45,8 @@ shinyUI(fluidPage(
       numericInput("DAD", "ДАД:", 48   ),
       numericInput("HSS", "ЧСС:", 52   ),
       
-      selectInput("XSNFK",   "Выберите категорию ХСН ФК:", choices = c("0", "1", "2", "3", "4")),
-      selectInput("XSNstade","Выберите стадию ХСН:",       choices = c("0", "1", "2", "3"))
+      selectInput("XSNFK",    "Выберите категорию ХСН ФК:", choices = c("0", "1", "2", "3", "4")),
+      selectInput("XSNstade", "Выберите стадию ХСН:",       choices = c("0", "1", "2", "3"))
     ),
     
     tags$div(class = "predictGroup", id = "CP",
