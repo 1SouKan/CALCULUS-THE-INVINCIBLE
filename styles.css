@@ -1,41 +1,72 @@
 @import url("https://69.media.tumblr.com/1745799d98b8011b87b83c7bb32e6271/tumblr_ngpo1e6F2F1sj78v1o1_1280.png");
 
+/*фон*/
+
 body {
  background-image: url("https://69.media.tumblr.com/1745799d98b8011b87b83c7bb32e6271/tumblr_ngpo1e6F2F1sj78v1o1_1280.png");
- background-repeat: no-repeat;
-  background-position: right top;
-  
-   background-attachment: fixed;
+  background-repeat: no-repeat;
+    background-position: right top;
+      background-attachment: fixed;
 }
+
+/*заголовники */
+
+.predictGroup {
+  text-align: left;
+    text-transform: uppercase;
+      letter-spacing: 1px;
+        font-style: italic;
+          font-family:"Comic Sans MS", cursive, sans-serif;
+            font-size: 30px;
+              font-weight: bold;
+                line-height: 1.1;
+                 color: #1B6F1D;
+}
+
+/*первая часть*/
 
 h1 {
-    text-align: center;
-  color: #669900;
-    border: 3px solid black;
+/*текст и размеры*/
+  
+  text-transform: uppercase;
+    letter-spacing: 1px;
+      font-style: italic;
+        font-family: "Comic Sans MS", cursive, sans-serif;
+          font-size: 40px;
+            text-shadow: 2px 1px black;
+            
+   /*рамка и росположение*/
+  
+  width: 500px;
+   clear: left;
+     text-align: center;
+      color: #669900;
+       border: 3px solid ;
+         border-color: #1e7b1f;
+
+            
  
-  width: 250px;
-  height: 40px;
-text-transform: uppercase;
-letter-spacing: 2px;
-font-style: italic;
- font-family:"Comic Sans MS", cursive, sans-serif;
- font-size: 30px;
- font-weight: bold;
 }
 
-
 h2 {
-   text-align: center;
-color: #669900;
-border: 3px solid black;
-  width: 250px;
-  height: 40px;
+
+/*текст и размеры*/
+  
   text-transform: uppercase;
-  letter-spacing: 2px;
-  line-height: 1.1;
-  font-style: italic;
-  font-family: "Comic Sans MS", cursive, sans-serif;
-  font-size: 30px;
-  font-weight: bold;
+   letter-spacing: 1px;
+    font-style: italic;
+       font-family: "Comic Sans MS", cursive, sans-serif;
+        font-size: 40px;
+          text-shadow: 2px 1px black;
+ 
+  /*рамка и росположение*/
+ 
+  width: 500px;
+    clear: left;
+      text-align: center;
+       color: #669900;
+         border: 3px solid ;
+          border-color: #1B6F1D;
+ 
 }
  
