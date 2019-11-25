@@ -1,7 +1,8 @@
 library(shiny)
  
 # Функция shinyUI() задает структуру пользовательского интерфейса:
-shinyUI(fluidPage(
+shinyUI(
+ fluidPage(
   
   includeCSS("styles.css"),
   
@@ -9,15 +10,31 @@ shinyUI(fluidPage(
   headerPanel("Calculator"),
  
   # Функция, определяющая структуру боковой панели приложения:
-  sidebarPanel(),
+  sidebarPanel( 
+   tags$div(class = "risks", id = "risksOut", 
+     uiOutput("retsediva_FP_EIT"),
+     uiOutput("PPovtGosp"       ),
+     uiOutput("PCardEmb"        ),
+     uiOutput("PXCH"            ),
+     uiOutput("PmtRezFp"        ),
+     uiOutput("PmtPovtGosp"     ),
+     uiOutput("PmtCardEmb"      ),
+     uiOutput("PmtXCH"          )
+    )
+   submitButton("Load Preview Data"), # Update data
+   width = 3;
+  ),
  
   # Функция, определяющая структуру основного окна приложения:
   mainPanel(
     
+   tags$div(class = "predicts", id = "PRED",
     h1("Предикторы"), # Note the ,
-    numericInput("voz", # Name
+    tags$div(class = "predictGroup", id = "age",
+      numericInput("voz", # Name
       "Возраст:", # Label
       35),
+    ),
 
     tags$div(class = "predictGroup", id = "ECG",
       h2("Эхо КГ"),
@@ -25,7 +42,7 @@ shinyUI(fluidPage(
       numericInput("IMMLG", "ИММЛЖ:", 57 ),
       numericInput("KDR",   "КДР:",   4.3),
       numericInput("FV",    "ФВ:",    40 )
-      ),
+     ),
     
     tags$div(class = "predictGroup", id = "BCV",
       h2("Биохимические показатели"),
@@ -37,7 +54,7 @@ shinyUI(fluidPage(
       numericInput("SRB",  "СРБ:",              1.2 ),
       numericInput("MK",   "Мочевая кислота:",  0   ),
       numericInput("SKF",  "СКФ:",              18.8)
-      ), 
+     ), 
     
     tags$div(class = "predictGroup", id = "EDV",
       h2("Гемодинамические показатели"),
@@ -57,19 +74,8 @@ shinyUI(fluidPage(
       selectInput("SDIA",    "Сахарный диабет:",        choices = c("0", "1")),
       selectInput("FAT",     "Абдоминальное ожирение:", choices = c("0", "1")),
     ),
-
-    submitButton("Load Preview Data"), # Update data
-
-    tags$div(class = "risks", id = "risksOut", 
-      uiOutput("retsediva_FP_EIT"),
-      uiOutput("PPovtGosp"       ),
-      uiOutput("PCardEmb"        ),
-      uiOutput("PXCH"            ),
-      uiOutput("PmtRezFp"        ),
-      uiOutput("PmtPovtGosp"     ),
-      uiOutput("PmtCardEmb"      ),
-      uiOutput("PmtXCH"          )
-    )
+   ),         
   )
-))
+ )
+)
 
