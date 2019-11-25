@@ -9,6 +9,41 @@ body {
       background-attachment: fixed;
 }
 
+.col-sm-12 h1
+{
+  text-align:center;
+     font-family:"Times New Roman", cursive, sans-serif;
+       font-size: 70px;
+        color: #3e9b3f;
+          text-shadow:3px 2px black;
+}
+
+retsediva_FP_EIT{
+  
+  text-align: left;
+    text-transform: uppercase;
+      letter-spacing: 1px;
+        font-style: italic;
+          font-family:"Times New Roman", cursive, sans-serif;
+            font-size: 30px;
+              font-weight: bold;
+                line-height: 1.1;
+                 color: #1B6F1D;
+}
+  
+numericInput {
+text-align: left;
+    text-transform: uppercase;
+      letter-spacing: 1px;
+        font-style: italic;
+          font-family:"Times New Roman", cursive, sans-serif;
+            font-size: 30px;
+              font-weight: bold;
+                line-height: 1.1;
+                 color: #1B6F1D;
+}
+
+
 /*заголовники */
 
 .predictGroup {
@@ -16,7 +51,7 @@ body {
     text-transform: uppercase;
       letter-spacing: 1px;
         font-style: italic;
-          font-family:"Comic Sans MS", cursive, sans-serif;
+          font-family:"Times New Roman", cursive, sans-serif;
             font-size: 30px;
               font-weight: bold;
                 line-height: 1.1;
@@ -25,13 +60,13 @@ body {
 
 /*первая часть*/
 
-h1 {
-/*текст и размеры*/
+.predicts h1 {
+/*текст и размеры*/ 
   
   text-transform: uppercase;
     letter-spacing: 1px;
       font-style: italic;
-        font-family: "Comic Sans MS", cursive, sans-serif;
+        font-family: "Times New Roman", cursive, sans-serif;
           font-size: 40px;
             text-shadow: 2px 1px black;
             
@@ -48,14 +83,14 @@ h1 {
  
 }
 
-h2 {
+.predictGroup h2 {
 
 /*текст и размеры*/
   
   text-transform: uppercase;
    letter-spacing: 1px;
     font-style: italic;
-       font-family: "Comic Sans MS", cursive, sans-serif;
+       font-family: "Times New Roman", cursive, sans-serif;
         font-size: 40px;
           text-shadow: 2px 1px black;
  
