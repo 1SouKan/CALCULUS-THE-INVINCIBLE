@@ -3,6 +3,9 @@ library(shiny)
 # Функция shinyUI() задает структуру пользовательского интерфейса:
 shinyUI(
  fluidPage(
+
+theme = shinytheme("united"),
+  includeCSS("styles.css"),
   
   includeCSS("styles.css"),
   
