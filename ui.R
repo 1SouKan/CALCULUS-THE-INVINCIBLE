@@ -20,9 +20,9 @@ shinyUI(
      uiOutput("PmtPovtGosp"     ),
      uiOutput("PmtCardEmb"      ),
      uiOutput("PmtXCH"          )
-    )
+    ),
    submitButton("Load Preview Data"), # Update data
-   width = 3;
+   width = 3,
   ),
  
   # Функция, определяющая структуру основного окна приложения:
