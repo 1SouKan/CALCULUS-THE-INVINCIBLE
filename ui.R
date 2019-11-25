@@ -26,12 +26,12 @@ shinyUI(
   ),
  
   # Функция, определяющая структуру основного окна приложения:
-  mainPanel(
-    
+  mainPanel(    
    tags$div(class = "predicts", id = "PRED",
     h1("Предикторы"), # Note the ,
+    
     tags$div(class = "predictGroup", id = "age",
-      numericInput("voz", # Name
+     numericInput("voz", # Name
       "Возраст:", # Label
       35),
     ),
