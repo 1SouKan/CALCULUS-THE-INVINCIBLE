@@ -3,105 +3,123 @@
 /*фон*/
 
 body {
- background-image: url("https://69.media.tumblr.com/1745799d98b8011b87b83c7bb32e6271/tumblr_ngpo1e6F2F1sj78v1o1_1280.png");
-  background-repeat: no-repeat;
-    background-position: right top;
+  
+      background-image: url("https://69.media.tumblr.com/1745799d98b8011b87b83c7bb32e6271/tumblr_ngpo1e6F2F1sj78v1o1_1280.png");
+      background-repeat: no-repeat;
+      background-position: right top;
       background-attachment: fixed;
+    
 }
 
 .col-sm-12 h1
 {
-  text-align:center;
-     font-family:"Times New Roman", cursive, sans-serif;
-       font-size: 70px;
-        color: #3e9b3f;
-          text-shadow:3px 2px black;
+      text-align: center;
+      font-family:"Times New Roman", cursive, sans-serif;
+      font-size: 50px;
+      color: #1e7b1f;
+      font-weight: bold;
+          
 }
 
+ .form-group.shiny-input-container
+ {
+      text-align: center;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-family:"Times New Roman", cursive, sans-serif;
+      font-size: 20px;
+      font-weight: bold;
+      line-height: 1.1;
+      color: #2E8B57;
+      
+ }
+ 
+/* .col-sm-4
+ {
+ 
+ }*/
 retsediva_FP_EIT{
   
-  text-align: left;
-    text-transform: uppercase;
+      text-align: left;
+      text-transform: uppercase;
       letter-spacing: 1px;
-        font-style: italic;
-          font-family:"Times New Roman", cursive, sans-serif;
-            font-size: 30px;
-              font-weight: bold;
-                line-height: 1.1;
-                 color: #1B6F1D;
+      font-family:"Times New Roman", cursive, sans-serif;
+      font-size: 20px;
+      font-weight: bold;
+      line-height: 1.1;
+      color: #1B6F1D;
+                 
 }
   
 numericInput {
-text-align: left;
-    text-transform: uppercase;
+      
+      text-align: center;
+      text-transform: uppercase;
       letter-spacing: 1px;
-        font-style: italic;
-          font-family:"Times New Roman", cursive, sans-serif;
-            font-size: 30px;
-              font-weight: bold;
-                line-height: 1.1;
-                 color: #1B6F1D;
+      font-family:"Times New Roman", cursive, sans-serif;
+      font-size: 20px;
+      font-weight: bold;
+      line-height: 1.1;
+      border-color: #1B6F1D;
 }
 
 
 /*заголовники */
 
 .predictGroup {
-  text-align: left;
-    text-transform: uppercase;
+  
+      text-align: center;
+      text-transform: uppercase;
       letter-spacing: 1px;
-        font-style: italic;
-          font-family:"Times New Roman", cursive, sans-serif;
-            font-size: 30px;
-              font-weight: bold;
-                line-height: 1.1;
-                 color: #1B6F1D;
+      font-family:"Times New Roman", cursive, sans-serif;
+      font-size: 20px;
+      font-weight: bold;
+      line-height: 1.1;
+      border-color: #1B6F1D;
+  
 }
 
 /*первая часть*/
 
 .predicts h1 {
-/*текст и размеры*/ 
   
-  text-transform: uppercase;
-    letter-spacing: 1px;
-      font-style: italic;
-        font-family: "Times New Roman", cursive, sans-serif;
-          font-size: 40px;
-            text-shadow: 2px 1px black;
-            
-   /*рамка и росположение*/
-  
-  width: 500px;
-   clear: left;
-     text-align: center;
-      color: #669900;
-       border: 3px solid ;
-         border-color: #1e7b1f;
+      /*текст и размеры*/ 
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-family: "Times New Roman", cursive, sans-serif;
+      font-size: 33px;
+      line-height: 1.2;
+      color: #1e7b1f;
+      font-weight: bold;
+              
+      /*рамка и росположение*/
+      width: 500px;
+      clear: center;
+      text-align: center;
+      border: 2px solid ;
+      border-color: #1B6F1D;
 
-            
- 
 }
 
 .predictGroup h2 {
 
-/*текст и размеры*/
-  
-  text-transform: uppercase;
-   letter-spacing: 1px;
-    font-style: italic;
-       font-family: "Times New Roman", cursive, sans-serif;
-        font-size: 40px;
-          text-shadow: 2px 1px black;
- 
-  /*рамка и росположение*/
- 
-  width: 500px;
-    clear: left;
+      /*текст и размеры*/
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-family: "Times New Roman", cursive, sans-serif;
+      font-size: 33px;
+      line-height: 1.2;
+      color: #1e7b1f;
+      font-weight: bold;
+              
+     
+      /*рамка и росположение*/
+      width: 500px;
+      clear: center;
       text-align: center;
-       color: #669900;
-         border: 3px solid ;
-          border-color: #1B6F1D;
+      border: 2px solid ;
+      border-color: #1B6F1D;
+     
  
 }
  
