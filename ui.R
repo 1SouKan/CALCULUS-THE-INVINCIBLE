@@ -24,7 +24,7 @@ theme = shinytheme("united"),
      uiOutput("PmtCardEmb"      ),
      uiOutput("PmtXCH"          )
     ),
-   submitButton("Load Preview Data"), # Update data
+
    width = 3,
   ),
  
