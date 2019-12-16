@@ -1,5 +1,5 @@
 library(shiny)
- 
+library(shinythemes)
 # Функция shinyUI() задает структуру пользовательского интерфейса:
 shinyUI(
  fluidPage(
