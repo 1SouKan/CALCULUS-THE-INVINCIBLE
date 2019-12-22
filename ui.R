@@ -6,10 +6,10 @@ library(rsconnect)
 
 shinyUI(fluidPage(
   
-  theme = shinytheme("united"),
+  # theme = shinytheme("united"), Не вставялйте это говно, оно перекрывает наши стили
   includeCSS("styles.css"),
   
-  includeCSS("styles.css"),
+  # includeCSS("styles.css"), Зачем вы два раза ее прописали?
   
   # Название приложения
   headerPanel("Calculator"),
@@ -24,9 +24,8 @@ shinyUI(fluidPage(
              selected = "Главная",
              
     tabPanel("Файл", icon = icon("file"),
-             downloadButton("downloadData","Сохранить файл")),
-             
-             
+             downloadButton("downloadData","Сохранить файл")
+            ),                      
     tabPanel("Главная", icon = icon("home"), 
              tabsetPanel(type = "tabs",
                                
