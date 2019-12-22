@@ -148,7 +148,7 @@ shinyUI(fluidPage(
              )# конец tabsetPanel
              ),#конец tabPanel(2) "Главная"
              
-    tabPanel("Администрирование", icon = icon("black-tie")
+    tabPanel("Администрирование", icon = icon("black-tie"),
              tags$div(id = "admoon", 
                       fluidRow(
                         column (width = 4,
