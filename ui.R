@@ -153,8 +153,9 @@ shinyUI(fluidPage(
     tabPanel("О приложении", icon = icon("info"),
              h4("Приложение создала бригада лучших специалистов по лени университета СибГУЧИ"), 
              img(src = "https://leonardo.osnova.io/ccbb85d2-b01a-0a0d-7c83-b0560821e630/-/resize/800/-/progressive/yes/",
-             height = 500, 
-             width = 700))
+                 height = 500,
+                 width = 700)
+            )
     
     )  # конец navbarPage
 ))
