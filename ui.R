@@ -60,7 +60,7 @@ shinyUI(fluidPage(
                                         #selectInput("EIT", #Name
                                         #            "ЭИТ", #Label
                                         #             choices=c("0","1"))
-                                        #),
+                                        ),
                                )
                       ),#конец tabPanel "Пациент"
                                 
