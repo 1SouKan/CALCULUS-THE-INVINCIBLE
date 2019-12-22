@@ -1,1 +1,9 @@
-> pred <- list("LP","IMMLG","KDR","FV","OX","LPVP","Gluk","Glek","NYP","SRB","MK","SKF","SAD","DAD","HSS","XSNFK","XSNstade","XOBL","HYPOTER","TIMOTOX","SDIA","FAT")
+pred <- list( "ЛП" = "LP"             , "ИММЛЖ" = "IMMLG"          , "КДР"  = "KDR"             ,
+              "ФВ" = "FV"             , "Общий холестерин" = "OX"  , "ЛПВП" = "LPVP"            ,
+              "Глюкоза" = "Gluk"      , "Галлектин" = "Glek"       , "НУП" = "NYP"              ,
+              "СРБ" = "SRB"           , "Мочевая кислота" = "MK"   , "СКФ" = "SKF"              ,
+              "САД" = "SAD"           , "ДАД" = "DAD"              , "ЧСС" = "HSS"              ,
+              "ХСН ФК" = "XSNFK"      , "ХСН (стадия)" = "XSNstade", "ХОБЛ" = "XOBL"            ,
+              "Гипотериоз" = "HYPOTER", "Тимотоксикоз" = "TIMOTOX" , "Сахарный диабет " = "SDIA",
+              "Абоминальное ожирение" = "FAT"
+             )
