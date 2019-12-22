@@ -5,19 +5,25 @@ source("list1.R")
 # графического интерфейса и обновления значений различных переменных:
 shinyServer(function(input, output) {
    
-  tempData<-data.frame( "retsediva_FP_EIT" = list(),
-                        "PPovtGosp"        = list(),
-                        "PCardEmb"         = list(),
-                        "PXCH"             = list(),
-                        "PmtRezFp"         = list(),
-                        "PmtPovtGosp"      = list(),
-                        "PmtCardEmb"       = list(),
-                        "PmtXCH"           = list()
+   tempData<-data.frame("retsediva_FP_EIT" = c(0 , 0    , 0  , 0 , 0 , 0   , 0   , 0   , 0  , 0  , 0 , 0  , 0  , 0  , 0  , 0    , 0       , 0   , 0      , 0      , 0   , 0  ),
+                        "PPovtGosp"        = c(0 , 0    , 0  , 0 , 0 , 0   , 0   , 0   , 0  , 0  , 0 , 0  , 0  , 0  , 0  , 0    , 0       , 0   , 0      , 0      , 0   , 0  ),
+                        "PCardEmb"         = c(0 , 0    , 0  , 0 , 0 , 0   , 0   , 0   , 0  , 0  , 0 , 0  , 0  , 0  , 0  , 0    , 0       , 0   , 0      , 0      , 0   , 0  ),
+                        "PXCH"             = c(0 , 0    , 0  , 0 , 0 , 0   , 0   , 0   , 0  , 0  , 0 , 0  , 0  , 0  , 0  , 0    , 0       , 0   , 0      , 0      , 0   , 0  ),
+                        "PmtRezFp"         = c(0 , 0    , 0  , 0 , 0 , 0   , 0   , 0   , 0  , 0  , 0 , 0  , 0  , 0  , 0  , 0    , 0       , 0   , 0      , 0      , 0   , 0  ),
+                        "PmtPovtGosp"      = c(0 , 0    , 0  , 0 , 0 , 0   , 0   , 0   , 0  , 0  , 0 , 0  , 0  , 0  , 0  , 0    , 0       , 0   , 0      , 0      , 0   , 0  ),
+                        "PmtCardEmb"       = c(0 , 0    , 0  , 0 , 0 , 0   , 0   , 0   , 0  , 0  , 0 , 0  , 0  , 0  , 0  , 0    , 0       , 0   , 0      , 0      , 0   , 0  ),
+                        "PmtXCH"           = c(0 , 0    , 0  , 0 , 0 , 0   , 0   , 0   , 0  , 0  , 0 , 0  , 0  , 0  , 0  , 0    , 0       , 0   , 0      , 0      , 0   , 0  )
                         )
    
    observeEvent(input$confirmChoice, {
       if(input$password == "password") {
-         
+         #tempRisk <- input$riskChoice
+         #tempText <- renderPrint({tempRisk})
+         #print(tempRisk)
+         for(val in input$predChoice) {
+            tempData[val, input$riskChoice] <- "1"
+         }
+         print(tempData)
       }
    })
    
