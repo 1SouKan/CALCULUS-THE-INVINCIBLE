@@ -57,10 +57,10 @@ shinyUI(fluidPage(
                                                      "Возраст:", # Label
                                                      35),
                                         
-                                        selectInput("EIT", #Name
-                                                     "ЭИТ", #Label
-                                                     choices=c("0","1"))
-                                        ),
+                                        #selectInput("EIT", #Name
+                                        #            "ЭИТ", #Label
+                                        #             choices=c("0","1"))
+                                        #),
                                )
                       ),#конец tabPanel "Пациент"
                                 
