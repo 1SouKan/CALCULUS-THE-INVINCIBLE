@@ -5,10 +5,19 @@ source("list1.R")
 # графического интерфейса и обновления значений различных переменных:
 shinyServer(function(input, output) {
    
-   tempList<-list()
+  tempData<-data.frame("retsediva_FP_EIT" = list(),
+                        "PPovtGosp"        = list(),
+                        "PCardEmb"         = list(),
+                        "PXCH"             = list(),
+                        "PmtRezFp"         = list(),
+                        "PmtPovtGosp"      = list(),
+                        "PmtCardEmb"       = list(),
+                        "PmtXCH"           = list()
+                        )
+   
    observeEvent(input$confirmChoice, {
       if(input$password == "password") {
-         tempList<-input$predChoice
+         
       }
    })
    
