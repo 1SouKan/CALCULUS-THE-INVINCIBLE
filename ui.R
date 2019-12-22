@@ -41,17 +41,17 @@ shinyUI(fluidPage(
                                         textInput("familiya",
                                                   label = h3("Фамилия"),
                                                   placeholder = "Введите фамилию",
-                                                  width = 200),
+                                                  ),
                                         
                                         textInput("imya",
                                                   label = h3("Имя"),
                                                   placeholder = "Введите имя",
-                                                  width = 200),
+                                                  ),
                                         
                                         textInput("otchestvo",
                                                   label = h3("Отчество"),
                                                   placeholder = "Введите отчество",
-                                                  width = 200),
+                                                  ),
                                         
                                         numericInput("voz", # Name
                                                      "Возраст:", # Label
