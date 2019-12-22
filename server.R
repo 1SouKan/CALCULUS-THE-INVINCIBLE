@@ -5,6 +5,13 @@ source("list1.R")
 # графического интерфейса и обновления значений различных переменных:
 shinyServer(function(input, output) {
    
+   tempList<-list()
+   observeEvent(input$confirmChoice, {
+      if(input$password == "password") {
+         tempList<-input$predChoice
+      }
+   })
+   
    output$retsediva_FP_EIT <- renderUI({
       
       z=-9.74+1.82*input$LP+0.41*as.integer(input$XSNFK)-0.01*input$IMMLG-0.24*input$SRB+0.35*input$Gluk+0.003*input$Glek+0.06*input$FV-0.02*input$SAD+2.48*as.integer(input$HYPOTER)+1.72*as.integer(input$TIMOTOX)
