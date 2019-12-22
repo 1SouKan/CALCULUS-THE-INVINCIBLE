@@ -146,9 +146,10 @@ shinyUI(fluidPage(
              
     tabPanel("Администрирование", icon = icon("black-tie")
              tags$div(id = "admoon", 
-                      selectInput       ("riskChoice", "Выберите риск:"      , c("Risk1", "Risk2")),
-                      checkboxGroupInput("predChoice", "Выберите предикторы:", pred  ),
-                      passwordInput     ("password",   "Введите пароль:")
+                      selectInput       ("riskChoice",    "Выберите риск:"      , c("Risk1", "Risk2")),
+                      checkboxGroupInput("predChoice",    "Выберите предикторы:", pred  ),
+                      passwordInput     ("password",      "Введите пароль:"),
+                      actionButton      ("confirmChoice", "Подтвердите выбор")
                       )      
              ),        
              
