@@ -1,4 +1,5 @@
 @import url("https://69.media.tumblr.com/1745799d98b8011b87b83c7bb32e6271/tumblr_ngpo1e6F2F1sj78v1o1_1280.png");
+@import url("https://i.pinimg.com/originals/1e/7b/0b/1e7b0bf8922e927433930323f3afc26a.jpg")
 
 /*фон*/
 
@@ -38,6 +39,133 @@ body {
  {
  
  }*/
+retsediva_FP_EIT{
+  
+      text-align: center;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-family:"Times New Roman", cursive, sans-serif;
+      font-size: 20px;
+      font-weight: bold;
+      line-height: 1.1;
+      color: #1B6F1D;
+                 
+}
+  
+numericInput {
+      
+      text-align: center;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-family:"Times New Roman", cursive, sans-serif;
+      font-size: 20px;
+      font-weight: bold;
+      line-height: 1.1;
+      border-color: #1B6F1D;
+}
+
+
+/*заголовники */
+
+.predictGroup {
+  
+      text-align: center;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-family:"Times New Roman", cursive, sans-serif;
+      font-size: 20px;
+      font-weight: bold;
+      line-height: 1.1;
+      border-color: #1B6F1D;
+  
+}
+
+/*первая часть*/
+
+.predicts h1 {
+  
+      /*текст и размеры*/ 
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-family: "Times New Roman", cursive, sans-serif;
+      font-size: 33px;
+      line-height: 1.2;
+      color: #1e7b1f;
+      font-weight: bold;
+              
+      /*рамка и росположение*/
+      width: 500px;
+      clear: center;
+      text-align: center;
+      border: 2px solid ;
+      border-color: #1B6F1D;
+
+}
+
+.predictGroup h2 {
+
+      /*текст и размеры*/
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-family: "Times New Roman", cursive, sans-serif;
+      font-size: 33px;
+      line-height: 1.2;
+      color: #1e7b1f;
+      font-weight: bold;
+              
+     
+      /*рамка и росположение*/
+      width: 500px;
+      clear: center;
+      text-align: center;
+      border: 2px solid ;
+      border-color: #1B6F1D;
+     
+ 
+}
+.predictGroup h3 {
+
+
+      text-align: left;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-family:"Times New Roman", cursive, sans-serif;
+      font-size: 20px;
+      font-weight: bold;
+      line-height: 1.1;
+      border-color: #1B6F1D;
+     
+  
+ 
+}
+.risks RisksOut {
+    text-transform: uppercase;
+      letter-spacing: 1px;
+      font-family: "Times New Roman", cursive, sans-serif;
+      font-size: 20px;
+      line-height: 1.2;
+      color: #1e7b1f;
+      font-weight: bold;
+              
+  
+}
+#title{
+     text-transform: uppercase;
+      letter-spacing: 1px;
+      font-family: "Times New Roman", cursive, sans-serif;
+      font-size: 20px;
+      line-height: 1.2;
+      color: #1e7b1f;
+      font-weight: bold;
+              
+  
+}
+ 
+#admoon {
+      background-color: rgba(230,230,230,0.8);
+     
+}
+ 
 retsediva_FP_EIT{
   
       text-align: left;
