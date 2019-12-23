@@ -123,25 +123,29 @@ shinyUI(fluidPage(
                                ),   
                       ),#конец tabPanel "Коморбидные заболевания"
                                   
-             tabPanel("Прогноз",icon = icon("file-medical"),
+           tabPanel("Прогноз",icon = icon("file-medical"),
                       actionButton("SETDEFOULT","Сбросить данные"),
-                      
+                     
                       tags$div(class = "risks", id = "risksOut",
-                                                    
-                      tabPanel("ЭИТ",
-                               uiOutput("retsediva_FP_EIT"),
-                               uiOutput("PPovtGosp"       ),
-                               uiOutput("PCardEmb"        ),
-                               uiOutput("PXCH"            ),
-                      ),
-                                                   
-                      tabPanel("Без ЭИТ",
-                               uiOutput("PmtRezFp"        ),
-                               uiOutput("PmtPovtGosp"     ),
-                               uiOutput("PmtCardEmb"      ),
-                               uiOutput("PmtXCH"          )
+                               fluidRow(
+                                  column (width = 3,
+                                    tabPanel(  "ЭИТ",
+                                      uiOutput("retsediva_FP_EIT"),
+                                      uiOutput("PPovtGosp"       ),
+                                      uiOutput("PCardEmb"        ),
+                                      uiOutput("PXCH"            ),
+                                            ), 
+                                        ), 
+                                 column (width = 3,
+                                    tabPanel(  "Без ЭИТ",
+                                      uiOutput("PmtRezFp"        ),
+                                      uiOutput("PmtPovtGosp"     ),
+                                      uiOutput("PmtCardEmb"      ),
+                                      uiOutput("PmtXCH"          )
+                                             )
+                                        )
+                                      )
                                )
-                      )
                       )#конец tabPanel "Прогноз"
              
              
