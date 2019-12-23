@@ -21,7 +21,7 @@ shinyUI(fluidPage(
   
   
   navbarPage(img(src = "https://i.pinimg.com/originals/1e/7b/0b/1e7b0bf8922e927433930323f3afc26a.jpg",
-             height = 40, 
+             height = 34, 
              width = 35),
              selected = "Главная",
              
