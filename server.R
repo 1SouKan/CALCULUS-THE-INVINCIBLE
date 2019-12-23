@@ -16,10 +16,10 @@ shinyServer(function(input, output) {
    #                     "PmtXCH"           = c(0 , 0    , 0  , 0 , 0 , 0   , 0   , 0   , 0  , 0  , 0 , 0  , 0  , 0  , 0  , 0    , 0       , 0   , 0      , 0      , 0   , 0  )
    #                     )
    
-   tempData<-read.csv('I:\\InfTech\\testDir\\tempData.csv')
-   
+ 
    observeEvent(input$confirmChoice, {
       if(input$password == "password") {
+         tempData<-read.csv('C:\\Users\\tivan\\Desktop\\utf-8\\tempData.csv')
          #tempRisk <- input$riskChoice
          #tempText <- renderPrint({tempRisk})
          #print(tempRisk)
@@ -34,7 +34,7 @@ shinyServer(function(input, output) {
             }
          }
          #print(tempData)
-         write.csv(tempData, 'I:\\InfTech\\testDir\\tempData.csv', row.names = FALSE)
+         write.csv(tempData, 'C:\\Users\\tivan\\Desktop\\utf-8\\tempData.csv', row.names = FALSE)
       }
    })
    
